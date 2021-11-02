@@ -5,7 +5,7 @@ const registerRole = async (req, res) => {
     return res.status(400).send("Incomplete data");
 
   const existinRole = role.findOne({ name: req.body.name });
-  if (existinRole) return res.status(400).send("The role already exist");
+  if (existinRole) return res.status(400).send("El producto ya existe");
 
   const roleSchema = new {
     name: req.body.name,

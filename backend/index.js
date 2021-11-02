@@ -5,8 +5,8 @@ import dotenv from "dotenv"; //Variables de entorno.
 dotenv.config(); //Se inicializa junto con el servidor.
 
 const app = Express();
-
-app.use(Express.json()); //Para que solo envie o reciba json.
+//
+app.use(Express.json()); //Para que solo envie o reciba json entre from y back.
 app.use(cors());
 
 app.listen(process.env.PORT, () =>
